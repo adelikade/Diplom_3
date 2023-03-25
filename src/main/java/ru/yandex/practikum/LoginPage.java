@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
+    public final By textPutBurger = By.xpath("//h1[text()='Соберите бургер']");
     private final WebDriver driver;
     private final By loginAccButton = By.xpath("//button[text()='Войти в аккаунт']");
     private final By emailField = By.xpath("//input[@name='name']");
@@ -58,5 +59,10 @@ public class LoginPage {
     @Step("Отображается кнопка для входа")
     public void isDisplayLogin() {
         Assert.assertTrue(driver.findElement(loginLink).isDisplayed());
+    }
+
+    @Step("Отображается текст \"Соберите бургер\"")
+    public void isDisplayedTextPutBurger() {
+        Assert.assertTrue(driver.findElement(textPutBurger).isDisplayed());
     }
 }

@@ -3,14 +3,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
+import objects.Login;
+import objects.User;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import pojo.Login;
-import pojo.User;
 import ru.yandex.practikum.AccountPage;
 import ru.yandex.practikum.ConstructorPage;
 import ru.yandex.practikum.LoginPage;
@@ -74,6 +74,8 @@ public class AccountTest {
     @Description("Проверка перехода по клику на \"Личный кабинет\"")
     public void transferToAccount() {
         accountPage.clickToPersonalAccountLink();
+        accountPage.isDisplayedInfoAboutAccount();
+
     }
 
     @Test

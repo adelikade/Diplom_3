@@ -1,4 +1,4 @@
-package pojo;
+package objects;
 
 public class Login {
     private String email;

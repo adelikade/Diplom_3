@@ -2,8 +2,8 @@ package action;
 
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
-import pojo.Login;
-import pojo.User;
+import objects.Login;
+import objects.User;
 
 import static io.restassured.RestAssured.given;
 

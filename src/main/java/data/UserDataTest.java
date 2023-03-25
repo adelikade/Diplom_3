@@ -1,8 +1,8 @@
 package data;
 
 import io.qameta.allure.Step;
+import objects.User;
 import org.apache.commons.lang3.RandomStringUtils;
-import pojo.User;
 
 public class UserDataTest {
     @Step("Регистрация пользователя с корректным паролем")

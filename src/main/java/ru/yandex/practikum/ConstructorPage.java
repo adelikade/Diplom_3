@@ -6,11 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class ConstructorPage {
+    public final By textPutBurger = By.xpath("//h1[text()='Соберите бургер']");
     private final WebDriver driver;
-
     private final By logoLink = By.className("AppHeader_header__logo__2D0X2");
     private final By constructorLink = By.xpath("//p[text()='Конструктор']");
-    private final By textPutBurger = By.xpath("//h1[text()='Соберите бургер']");
     private final By activeTab = By.xpath("//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']/span[@class='text text_type_main-default']");
     private final By burgerIngredients = By.className("BurgerIngredients_ingredients__list__2A-mT");
     private final By sauceTab = By.xpath("//span[text()='Соусы']");
